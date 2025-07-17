@@ -1,0 +1,153 @@
+     * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+            font-family: 'Cairo', Arial, sans-serif;
+            direction: rtl;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(135deg, #07F2B0, #0DD9B3, #148DD9, #14B5D9, #0D0D0D);
+            color: #ffffff;
+            background-size: 400% 400%;
+            animation: wave 40s ease infinite;
+        }
+
+        @keyframes wave {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            flex: 1;
+            text-align: center;
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .logo {
+            width: 250px;
+            height: auto;
+            margin-bottom: 20px;
+            animation: zoom 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes zoom {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1.1);
+            }
+        }
+
+        .intro-group {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 1s ease-out forwards;
+            animation-delay: 0.5s;
+                        margin: 10px 0 25px 0;
+            color: white;
+            font-weight: bold;
+            text-shadow:
+                -1px -1px 0 #000c43,
+                1px -1px 0 #000c43,
+                -1px 1px 0 #000c43,
+                1px 1px 0 #000c43;
+        }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+       
+
+        .social-button {
+            text-decoration: none;
+            border: 3px solid white;
+            height: 45px;
+            width: 220px;
+            margin: 10px auto;
+            display: flex;
+            align-items: center;
+            justify-content:flex-end;
+            color: #ffffff;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+    }
+
+        .social-button:hover {
+            transform: scale(1.05);
+        }
+
+        .facebook {
+            background: linear-gradient(45deg, #1877F2, #3b5998);
+        }
+
+        .instagram {
+            background: linear-gradient(45deg, #feda75, #d62976, #962fbf, #4f5bd5);
+        }
+
+        .tiktok {
+            background: linear-gradient(45deg, #69C9D0, #010101, #EE1D52);
+        }
+
+        .whatsapp {
+            background: linear-gradient(45deg, #25D366, #128C7E);
+        }
+
+        .store-btn {
+            background: linear-gradient(45deg, #14B5D9, #0DD9B3);
+        }
+  .social-button img {
+  width: 30px;
+  height: 30px;
+   margin-right: 10px;
+      margin-left: 20px;
+
+}
+
+        footer {
+            text-align: center;
+            background-color: #222;
+            color: #ddd;
+            padding: 15px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            img {
+                width: 160px;
+            }
+
+            .intro-group h2 {
+                font-size: 18px;
+            }
+
+            .social-button {
+                width: 90%;
+                font-size: 14px;
+            }
+        }   
+       
